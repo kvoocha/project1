@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f2f2f2;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="text"], input[type="tel"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <center><img src="download.jpeg" alt="Student Registration"></center>
+        <center><h1>DevOps Lab</h1></center>
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2">Student Registration Form</th>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number:</td>
+                    <td><input type="tel" name="contact" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" required> Male
+                        <input type="radio" name="gender" value="Female" required> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address" required></td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="hobbies" value="Reading"> Reading
+                        <input type="checkbox" name="hobbies" value="Sports"> Sports
+                        <input type="checkbox" name="hobbies" value="Traveling"> Traveling
+                    </td>
+                </tr>
+                <tr>
+                    <td>Skillset:</td>
+                    <td>
+                        <input type="checkbox" name="skills" value="Programming"> Programming
+                        <input type="checkbox" name="skills" value="Designing"> Designing
+                        <input type="checkbox" name="skills" value="Management"> Management
+                    </td>
+                </tr>
+                <tr>
+                    <td>Higher Qualification:</td>
+                    <td>
+                        <select name="qualification" required>
+                            <option value="">Select Qualification</option>
+                            <option value="High School">High School</option>
+                            <option value="Undergraduate">Undergraduate</option>
+                            <option value="Postgraduate">Postgraduate</option>
+                            <option value="Doctorate">Doctorate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>District:</td>
+                    <td>
+                        <select name="district" required>
+                            <option value="">Select District</option>
+                            <option value="District1">District 1</option>
+                            <option value="District2">District 2</option>
+                            <option value="District3">District 3</option>
+                            <option value="District4">District 4</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="form-buttons">
+                <button type="submit">Register</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
